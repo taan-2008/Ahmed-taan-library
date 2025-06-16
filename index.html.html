@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مكتبة احم طعان</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>مكتبة احم طعان</h1>
+  </header>
+  <main>
+    <section class="gallery-section">
+      <h2>معرض الكتب والمنتجات</h2>
+      <div class="gallery" id="gallery">
+        <img src="images/book1.jpg" alt="كتاب 1">
+        <img src="images/book2.jpg" alt="كتاب 2">
+        <img src="images/book3.jpg" alt="منتج 1">
+      </div>
+      <input type="file" id="imageInput" multiple accept="image/*" style="display:none;">
+      <button id="addImagesBtn">إضافة صور جديدة</button>
+    </section>
+    <section class="qr-section">
+      <button id="showQRBtn">عرض كود QR للموقع</button>
+      <div id="qrContainer" style="display:none; margin-top: 10px;">
+        <canvas id="qrCode"></canvas>
+        <p>يمكنك مسح الكود لزيارة الموقع</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 مكتبة احم طعان
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/qrious/dist/qrious.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
